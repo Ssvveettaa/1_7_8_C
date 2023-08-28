@@ -29,14 +29,14 @@ void OutputMatrix(int[,] mtrx)
     }
 }
 
-void ChangeRows(int[,] matrix, int firstRow, int secondRow) // SwapFirstLastRows
+void ChangeRows(int[,] mtrx, int firstRow, int secondRow) // SwapFirstLastRows
 {
-    for (int j = 0; j < matrix.GetLength(1); j++)
+    for (int j = 0; j < mtrx.GetLength(1); j++)
     {
-        int temp = matrix[firstRow, j];
-        matrix[firstRow, j] = matrix[secondRow, j];
-        matrix[secondRow, j] = temp;
-        // (matrix[secondRow, j], matrix[firstRow, j]) = (matrix[firstRow, j], matrix[secondRow, j]); // Кортеж
+        int temp = mtrx[firstRow, j];
+        mtrx[firstRow, j] = mtrx[secondRow, j];
+        mtrx[secondRow, j] = temp;
+        // (mtrx[secondRow, j], mtrx[firstRow, j]) = (mtrx[firstRow, j], mtrx[secondRow, j]); // Кортеж
     }
 }
 
